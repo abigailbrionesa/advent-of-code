@@ -20,7 +20,7 @@ def is_invalid(input):
 def invalid_sum(input):
     total = 0
     for id in input:
-        if invalid_sum(id):
+        if is_invalid(id):
             total += id
     return total
     
