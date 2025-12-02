@@ -22,7 +22,7 @@ def invalid_sum(input):
     return total
     
 def main():
-    with open("input2example.txt") as f:
+    with open("input2.txt") as f:
         line = f.read().strip()
     ids = []
     for group in line.split(','):
