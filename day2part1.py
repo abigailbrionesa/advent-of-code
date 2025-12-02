@@ -10,7 +10,6 @@ def is_invalid(input):
     else:
         left  = str_input[:mid]
         right = str_input[mid:]
-    right = right.lstrip('0')
     if not left or not right:
         return False
     if left[0] == '0' or right[0] == '0':
