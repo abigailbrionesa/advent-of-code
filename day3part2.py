@@ -2,15 +2,15 @@
 def max_jolt(input):
     s = input.strip()
     n = len(s)
-    if n <= 11:
-        return
-    if n == 12:
+    if n <= 12:
         return s
     res = []
     start = 0
     need = 12
+    
+
     while need > 0:
-        last = n - (need - 1)
+        last = n - need + 1
         val = float('-inf')
         idx = start
         
