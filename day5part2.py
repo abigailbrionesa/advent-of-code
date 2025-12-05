@@ -21,7 +21,7 @@ def main():
             new.append([l,r])
         else:
             new[-1][1] = max(new[-1][1],r)
-    count = sum(r-1+1 for l,r in new)
+    count = sum(r-l+1 for l,r in new)
     print('count:', count)
 
 if __name__ == "__main__":
